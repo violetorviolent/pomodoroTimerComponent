@@ -1,0 +1,45 @@
+.PomodoroTimer{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.time {
+    font-size: 32px;
+}
+
+.time-wrapper {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.PomodoroTimer-dotsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.PomodoroTimer-dot{
+   background-color: var(--color-accent);
+   width: 4px;
+   height: 4px;
+   border-radius: 50%;
+}
+
+  
+@media screen and (max-width: 650px) {
+    .PomodoroTimer{
+        justify-content: center;
+    }
+    .time {
+        font-size: 24px;
+    }
+    
+    .time-wrapper {
+        font-size: 10px;
+        line-height: 20px;
+    }
+  
+  }
